@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 const sweetDevilPic = {
   src: 'http://i.imgur.com/qNhI9aL.jpg',
   alt: 'Sweet Devil',
-  width: '300px'
+  width: '400px'
 }
 
 const sweetDevilPicBack = {
-  src: 'http://i.imgur.com/EOiTnH3.png',
+  src: 'http://i.imgur.com/OWG5dxN.jpg',
   alt: 'Sweet Devil Reverse',
-  width: '300px'
+  width: '400px'
 }
 
 export class SweetDevilPic extends Component {

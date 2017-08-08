@@ -2,24 +2,7 @@ import React, { Component } from 'react';
 // import './App.css';
 import './AppTest2.css';
 import {SweetDevilPic} from './SweetDevilPic';
-
-const sweetDevilPic = {
-  src: 'http://i.imgur.com/qNhI9aL.jpg',
-  alt: 'Sweet Devil',
-  width: '300px'
-}
-
-const sweetDevilPicBack = {
-  src: 'http://i.imgur.com/EOiTnH3.png',
-  alt: 'Sweet Devil Reverse',
-  width: '300px'
-}
-
-const sweetDevilAv = {
-    src: 'http://i.imgur.com/TYysU4h.jpg',
-    alt: 'SweetDevilAvatar',
-    width: '140px'
-}
+import {SweetDevilIden} from './SweetDevilIden';
 
 class Test extends Component {
   render () {
@@ -27,50 +10,18 @@ class Test extends Component {
 <div className="strona">
 
   <div className="header">
-    <h1 id="name">Altera Sweet Devil ★★★</h1>
+    <h1 id="name">Altera Sweet Devil ★★★★★</h1>
     <h2 id="name2">アルテラ•スウィート•デビル</h2>
   </div>
 
     <div className="ramka">
 
-        <div className="kolumnaLewa">
+        <div className="leftColumn">
             <SweetDevilPic />
         </div>
 
         <div className="kolumnaPrawa">
-
-        <table className="iden">
-            <tr>
-                <th id="head1" colSpan="7">Identity</th>
-            </tr>
-
-            <tr>
-                <td id="head2" rowSpan="4">
-                    <img 
-                    src={sweetDevilAv.src}
-                    alt={sweetDevilAv.alt}
-                    width={sweetDevilAv.width} />
-                </td>
-            </tr>
-
-            <tr>
-                <td id="zolty">Lv.</td>
-                <td colSpan="5"> 90 / 90</td>
-            </tr>
-            <tr>
-                 <td id="kolor">ATK</td>
-                 <td>17.236</td>
-                 <td id="kolor">HP</td>
-                 <td>15.511</td>
-                 <td id="kolor">COST</td>
-                 <td>12</td>
-            </tr>
-            <tr>
-                <td id="zolty">Bond Lv.</td>
-                <td colSpan="3">5 / 5</td>
-                <td colSpan="2"><img src="http://i.imgur.com/wT0n2qj.png" /></td>
-            </tr>
-        </table>
+            <SweetDevilIden />
         <br />
         <table className="iden">
         <tbody>

@@ -14,7 +14,7 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.kolumnaLewa {
+.leftColumn {
     flex: 1 0 auto;
     width: 400px;
     padding: 15px;
@@ -31,13 +31,13 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-#kolor {
+#blue {
     color: #A8E8FB;
     font-size: 20px;
     font-style: bold;
 }
 
-#zolty {
+#yellow {
     color: #DBC200;
     font-size: 25px;
     font-style: bold;
