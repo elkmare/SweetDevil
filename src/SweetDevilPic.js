@@ -16,15 +16,22 @@ export class SweetDevilPic extends Component {
   constructor(props) {
     super(props);
     this.state = {reversed: false};
+    this.handleOnClick=this.handleOnClick.bind(this);
   }
- 
+  
+  handleOnClick() {
+    const newState = this.state.reversed == false ? true : false;
+    this.setState({reversed: newState});
+  }
+
   render() {
     if(this.state.reversed == false) {
     return (
       <img 
       src={sweetDevilPic.src}
       alt={sweetDevilPic.alt}
-      width={sweetDevilPic.width} />
+      width={sweetDevilPic.width}
+      onClick={this.handleOnClick} />
     )
     }
     else {
@@ -32,7 +39,8 @@ export class SweetDevilPic extends Component {
       <img 
       src={sweetDevilPicBack.src}
       alt={sweetDevilPicBack.alt}
-      width={sweetDevilPicBack.width} />
+      width={sweetDevilPicBack.width} 
+      onClick={this.handleOnClick}/>
     )
     }
   }
