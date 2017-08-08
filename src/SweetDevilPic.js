@@ -13,12 +13,27 @@ const sweetDevilPicBack = {
 }
 
 export class SweetDevilPic extends Component {
-    render() {
-        return (
-            <img 
-            src={sweetDevilPic.src}
-            alt={sweetDevilPic.alt}
-            width={sweetDevilPic.width} />
-        )
+  constructor(props) {
+    super(props);
+    this.state = {reversed: false};
+  }
+ 
+  render() {
+    if(this.state.reversed == false) {
+    return (
+      <img 
+      src={sweetDevilPic.src}
+      alt={sweetDevilPic.alt}
+      width={sweetDevilPic.width} />
+    )
     }
+    else {
+    return (
+      <img 
+      src={sweetDevilPicBack.src}
+      alt={sweetDevilPicBack.alt}
+      width={sweetDevilPicBack.width} />
+    )
+    }
+  }
 }
