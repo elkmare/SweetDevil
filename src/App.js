@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 // import './App.css';
 import './AppTest2.css';
+import {SweetDevilPic} from './SweetDevilPic';
 
 const sweetDevilPic = {
   src: 'http://i.imgur.com/qNhI9aL.jpg',
@@ -15,36 +15,47 @@ const sweetDevilPicBack = {
   width: '300px'
 }
 
+const sweetDevilAv = {
+    src: 'http://i.imgur.com/TYysU4h.jpg',
+    alt: 'SweetDevilAvatar',
+    width: '140px'
+}
+
 class Test extends Component {
   render () {
     return (
 <div className="strona">
 
   <div className="header">
-    <h1 id="name">Altera Sweet Devil ★★★★★</h1>
+    <h1 id="name">Altera Sweet Devil ★★★</h1>
     <h2 id="name2">アルテラ•スウィート•デビル</h2>
   </div>
 
     <div className="ramka">
 
         <div className="kolumnaLewa">
-          <img 
-            src={sweetDevilPic.src}
-            alt={sweetDevilPic.alt}
-            width={sweetDevilPic.width} />
+            <SweetDevilPic />
         </div>
 
         <div className="kolumnaPrawa">
+
         <table className="iden">
             <tr>
-                <th id="head1" colspan="7">Identity</th>
+                <th id="head1" colSpan="7">Identity</th>
             </tr>
+
             <tr>
-                <td id="head2" rowspan="4"><img src="http://figuya.com/uploads/product/profile_picture/8731/profile_Saber_-_Attila__Altera__-_Sweet_Devil_-_Union_Creative_vorschau.jpg" /></td>
+                <td id="head2" rowSpan="4">
+                    <img 
+                    src={sweetDevilAv.src}
+                    alt={sweetDevilAv.alt}
+                    width={sweetDevilAv.width} />
+                </td>
             </tr>
+
             <tr>
                 <td id="zolty">Lv.</td>
-                <td colspan="4"> 90 / 90</td>
+                <td colSpan="5"> 90 / 90</td>
             </tr>
             <tr>
                  <td id="kolor">ATK</td>
@@ -56,8 +67,8 @@ class Test extends Component {
             </tr>
             <tr>
                 <td id="zolty">Bond Lv.</td>
-                <td colspan="3">5 / 5</td>
-                <td colspan="2"><img src="http://i.imgur.com/wT0n2qj.png" /></td>
+                <td colSpan="3">5 / 5</td>
+                <td colSpan="2"><img src="http://i.imgur.com/wT0n2qj.png" /></td>
             </tr>
         </table>
         <br />
@@ -95,11 +106,11 @@ class Test extends Component {
             <table className="nobleph">
                 <tbody>
                     <tr>
-                        <th colspan="9">Noble Phantasm</th>
+                        <th colSpan="9">Noble Phantasm</th>
                     </tr>
                     <tr>
-                        <td rowspan="2"><img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_03.png" /></td>
-                        <td rowspan="2" id ="kolor">No Second Strike <br />(二度目のストライクはない)</td>
+                        <td rowSpan="2"><img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_03.png" /></td>
+                        <td rowSpan="2" id ="kolor">No Second Strike <br />(二度目のストライクはない)</td>
                         <td>Target</td>
                         <td>Rank</td>
                         <td>lvl. 1</td>
@@ -123,11 +134,11 @@ class Test extends Component {
             <table className="skills">
                 <tbody>
                     <tr>
-                        <th colspan="6">Skills</th>
+                        <th colSpan="6">Skills</th>
                     </tr>
                     <tr>
-                        <td colspan="3" id="kolor">Aktive Skills</td>
-                        <td colspan="3" id="kolor">Passive Skills</td>
+                        <td colSpan="3" id="kolor">Aktive Skills</td>
+                        <td colSpan="3" id="kolor">Passive Skills</td>
                     </tr>
                     <tr>
                         <td>Marksmanship A+</td>
