@@ -18,7 +18,7 @@ const quick = {
 export class SweetDevilCommands extends Component {
   constructor(props){
     super(props)
-    this.state = {hidden: true};
+    this.state = {hidden: false};
     this.handleClick=this.handleClick.bind(this);
   }
   
