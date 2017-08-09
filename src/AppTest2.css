@@ -84,6 +84,27 @@ table {
     width: 140px;
 }
 
+.about th {
+    font-family: Verdana;
+    font-size: 18px;
+    color: #000;
+    background-color: #E9EFF2;
+    border: 3px solid #E9EFF2;
+    border-bottom-color: #BCB8A0;
+    padding: 5px 0px 5px 5px;
+    text-align: left;
+}
+
+.about td {
+    text-align: justify;
+    font-family: Verdana;
+    font-size: 23px;
+    background-color: rgb(42, 47, 48, 0.8);
+    color: #fff;
+    padding: 15px;
+    text-shadow: 1px 1px #000;
+}
+
 .commands th {
     font-family: Verdana;
     font-size: 18px;
