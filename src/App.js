@@ -4,6 +4,7 @@ import './AppTest2.css';
 import {SweetDevilPic} from './SweetDevilPic';
 import {SweetDevilIden} from './SweetDevilIden';
 import {SweetDevilAbout} from './SweetDevilAbout';
+import {SweetDevilCommands} from './SweetDevilCommands';
 
 class Test extends Component {
   render () {
@@ -26,22 +27,7 @@ class Test extends Component {
         <br />
             <SweetDevilAbout />
         <br />
-
-            <table className="commands">
-                <tbody>
-                    <tr>
-                        <th>Command Cards</th>
-                    </tr>
-                    <tr>
-                    <td><img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_01.png" />
-                    <img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_02.png" />
-                    <img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_02.png" />
-                    <img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_03.png" />
-                    <img src="http://fate-go.cirnopedia.org/icons/pattern/pattern_03.png" /></td>
-                    </tr>
-                </tbody> 
-            </table>
-
+            <SweetDevilCommands />
         </div>
 
     </div>
