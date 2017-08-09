@@ -22,7 +22,7 @@ class Test extends Component {
             <SweetDevilPic />
         </div>
 
-        <div className="kolumnaPrawa">
+        <div className="rightColimn">
             <SweetDevilIden />
         <br />
             <SweetDevilAbout />

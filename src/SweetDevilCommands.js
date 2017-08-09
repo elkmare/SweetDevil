@@ -16,8 +16,32 @@ const quick = {
 }
 
 export class SweetDevilCommands extends Component {
+  constructor(props){
+    super(props)
+    this.state = {hidden: true};
+    this.handleClick=this.handleClick.bind(this);
+  }
+  
+  handleClick () {
+    const newState = this.state.hidden == true ? true : false;
+    this.setState({hidden: newState});
+  }
+  
   render() {
+    if(this.state.hidden == true) {
     return(
+      <table className="commands">
+        <tr>
+          <th>Command Cards</th>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+    )
+  }
+    else {
+      return (
       <table className="commands">
         <tr>
           <th>Command Cards</th>
@@ -26,22 +50,28 @@ export class SweetDevilCommands extends Component {
           <td>
             <img 
               src={quick.src}
-              art={quick.alt} />
+              art={quick.alt} 
+              onClick={this.hidden} />
             <img 
               src={arts.src}
-              alt={arts.alt} />
+              alt={arts.alt} 
+              onClick={this.hidden} />
             <img 
               src={arts.src}
-              alt={arts.alt} />
+              alt={arts.alt} 
+              onClick={this.hidden} />
             <img 
               src={buster.src}
-              alt={buster.alt} />
+              alt={buster.alt}
+              onClick={this.hidden} />
             <img 
               src={buster.src}
-              alt={buster.alt} />
+              alt={buster.alt}
+              onClick={this.hidden} />
           </td>
         </tr>
       </table>
-    )
+      )
+    }
+    }
   }
-}
