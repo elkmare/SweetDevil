@@ -8,14 +8,13 @@ import {SDSkillsPassive} from './SDSkillsPassive';
 export class SDSkills extends Component {
   render() {
     return (
-<div className="skills">
-  <TableHeader name="Skills"/>
-  <div className="skillsType">
-      <SDSkillsActive />
-      <SDSkillsPassive />
-  </div>
-</div>
-
+      <div className="skills">
+        <TableHeader name="Skills"/>
+        <div className="skillsType">
+          <SDSkillsActive />
+          <SDSkillsPassive />
+        </div>
+      </div>
     )
   }
 }

@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
 
-const sweetDevilAv = {
-    src: 'http://i.imgur.com/TYysU4h.jpg',
-    alt: 'SweetDevilAvatar',
-    width: '140px'
-}
-
 export class SDAv extends Component {
   render () {
     return (
-      <tr>
-        <td rowSpan ="4">
-          <img 
-          src={sweetDevilAv.src}
-          alt={sweetDevilAv.alt} />
-        </td>
-      </tr>
-
+        <div className="avatar">
+          <img
+          src={this.props.src}
+          alt={this.props.name}
+          />
+        </div>
     )
   }
 }

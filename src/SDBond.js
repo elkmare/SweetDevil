@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import {SDBondPic} from './SDBondPic';
 
 export class SDBond extends Component {
   render () {
     return (
-      <tr>
-        <td id="yellow">Bond Lv.</td>
-        <td colSpan="3">5 / 5</td>
-        <td colSpan="2"><SDBondPic /></td>
-      </tr>
+      <div className="bond">
+        <div id="yellow">{this.props.bondName}</div>
+        <div>{this.props.value}</div>
+        <div>
+          <img
+            src={this.props.src}
+            alt={this.props.name}
+          />
+        </div>
+      </div>
     )
   }
 }
