@@ -5,7 +5,7 @@ const sweetDevilBondPic = {
     alt: 'SweetDevilBond',
 }
 
-export class SweetDevilBondPic extends Component {
+export class SDBondPic extends Component {
   render () {
     return (
       <img 

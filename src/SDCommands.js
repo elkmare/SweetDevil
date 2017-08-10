@@ -15,7 +15,7 @@ const quick = {
   alt: 'Quick',
 }
 
-export class SweetDevilCommands extends Component {
+export class SDCommands extends Component {
   constructor(props){
     super(props)
     this.state = {hidden: false};

@@ -12,7 +12,7 @@ const sweetDevilPicBack = {
   width: '400px'
 }
 
-export class SweetDevilPic extends Component {
+export class SDPic extends Component {
   constructor(props) {
     super(props);
     this.state = {reversed: false};

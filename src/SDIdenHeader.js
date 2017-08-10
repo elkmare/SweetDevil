@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SweetDevilIdenHeader extends Component {
+export class SDIdenHeader extends Component {
   render () {
     return (
     <tr>

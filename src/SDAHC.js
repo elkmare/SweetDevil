@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SweetDevilAHC extends Component {
+export class SDAHC extends Component {
   render () {
     return(
       <tr>

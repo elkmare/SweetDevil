@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SweetDevilLvl extends Component {
+export class SDLvl extends Component {
   render () {
     return (
       <tr>

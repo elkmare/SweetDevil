@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SweetDevilAbout extends Component {
+export class SDAbout extends Component {
   render() {
     return(
     <table className="about"> 

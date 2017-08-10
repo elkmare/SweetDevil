@@ -6,7 +6,7 @@ const sweetDevilAv = {
     width: '140px'
 }
 
-export class SweetDevilAv extends Component {
+export class SDAv extends Component {
   render () {
     return (
       <tr>

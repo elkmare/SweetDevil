@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-// import './App.css';
-import './AppTest2.css';
-import {SweetDevilPic} from './SweetDevilPic';
-import {SweetDevilIden} from './SweetDevilIden';
-import {SweetDevilAbout} from './SweetDevilAbout';
-import {SweetDevilCommands} from './SweetDevilCommands';
-import {SweetDevilNP} from './SweetDevilNP';
-import {SweetDevilSkills} from './SweetDevilSkills';
+import './App.css';
+import './SDSkills.css';
+import {SDPic} from './SDPic';
+import {SDIden} from './SDIden';
+import {SDAbout} from './SDAbout';
+import {SDCommands} from './SDCommands';
+import {SDNP} from './SDNP';
+import {SDSkills} from './SDSkills';
+import {SDHeader} from './SDHeader';
+// import {SDNav} from './SDNav'
 
 class Test extends Component {
   render () {
@@ -14,30 +16,29 @@ class Test extends Component {
 <div className="strona">
 
   <div className="header">
-    <h1 id="name">Altera Sweet Devil ★★★★★</h1>
-    <h2 id="name2">アルテラ•スウィート•デビル</h2>
+      Header />
   </div>
-
+<br />
     <div className="ramka">
 
         <div className="leftColumn">
-            <SweetDevilPic />
+            <SDPic />
         </div>
 
-        <div className="rightColimn">
-            <SweetDevilIden />
+        <div className="rightColumn">
+            <SDIden />
         <br />
-            <SweetDevilAbout />
+            <SDAbout />
         <br />
-            <SweetDevilCommands />
+            <SDCommands />
         </div>
 
     </div>
 
         <div className="footer">
-            <SweetDevilNP />
+            <SDNP />
         <br />
-            <SweetDevilSkills />
+            <SDSkills />
         </div>
 </div>
     )
