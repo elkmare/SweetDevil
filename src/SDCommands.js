@@ -16,11 +16,20 @@ const quick = {
 }
 
 export class SDCommands extends Component {
+
   render() {
-      return (
-            <div className="cellMargin">
-              <div><img src={this.props.src} /></div>
-            </div>
-      )
+    let url;
+    if(this.props.type=="buster") {
+      url=buster.src;
+    } else if(this.props.type=="arts") {
+      url=arts.src;
+    } else {
+      url=quick.src;
     }
-    }
+    return (
+      <div className="cellMargin">
+        <div><img src={url} /></div>
+      </div>
+    )
+  }
+}

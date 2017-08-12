@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import './SDSkills.css';
+import './SDNP.css';
+import './SDIden.css';
+import './SDCommands.css';
+import './SDAbout.css';
 import {SDPic} from './SDPic';
 import {SDIden} from './SDIden';
 import {SDAbout} from './SDAbout';
@@ -10,21 +14,6 @@ import {SDHeader} from './SDHeader';
 import {SDNPContent} from "./SDNPContent";
 import {TableHeader} from './Header';
 // import {SDNav} from './SDNav'
-
-const buster = {
-  src: 'http://fate-go.cirnopedia.org/icons/pattern/pattern_03.png',
-  alt: 'Buster',
-}
-
-const arts = {
-  src: 'http://fate-go.cirnopedia.org/icons/pattern/pattern_02.png',
-  alt: 'Arts',
-}
-
-const quick = {
-  src: 'http://fate-go.cirnopedia.org/icons/pattern/pattern_01.png',
-  alt: 'Quick',
-}
 
 class Test extends Component {
   render () {
@@ -49,11 +38,11 @@ class Test extends Component {
             <div className="commands">
                 <TableHeader name="Command Cards" />
                 <div className="commandsContent">
-                    <SDCommands src={buster.src} />
-                    <SDCommands src={buster.src} />
-                    <SDCommands src={arts.src} />
-                    <SDCommands src={arts.src} />
-                    <SDCommands src={quick.src} />
+                    <SDCommands type="buster" />
+                    <SDCommands type="buster" />
+                    <SDCommands type="arts" />
+                    <SDCommands type="arts" />
+                    <SDCommands type="quick" />
                 </div>
             </div>
             
@@ -66,7 +55,7 @@ class Test extends Component {
             <div className="nobleph">
                 <TableHeader name="Noble Phantasm" />
                 <div className="nobleContainer">
-                    <SDNPContent src={buster.src} />
+                    <SDCommands type="buster" />
                     <SDNPContent name="No Second Strike" value="(二度目のストライクはない)"/>
                     <SDNPContent name="Target" value="All Enemies" />
                     <SDNPContent name="Rank" value="C-" />

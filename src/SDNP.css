@@ -1,0 +1,32 @@
+.nobleContainer {
+    background-color: #E6E6E6;
+    font-family: Verdana;
+    font-size: 15px;
+    background-color: rgb(42, 47, 48, 0.8);
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 3px solid #7F8C95;
+    border-left: 3px solid #7F8C95;
+    border-right: 3px solid #7F8C95;
+}
+
+.nobleDivision {
+    border-right: 1px solid #fff;
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nobleDivision img {
+    width: 140px;
+    text-align: center;
+}
+
+.nobleDivision:last-child {
+    border: 0;
+}
