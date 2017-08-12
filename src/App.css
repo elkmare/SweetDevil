@@ -10,14 +10,14 @@
 
 .rightColumn {
     flex: 1 1 auto;
-    padding: 15px 30px 15px 0px;
+    padding: 30px 30px 0px 0px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
 .leftColumn {
     flex: 1 0 auto;
     width: 400px;
-    padding: 15px;
+    padding: 30px 0px 15px 15px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -209,68 +209,75 @@ nav a {
     margin: 10px;
 }
 
-.types {
-    font-family: Verdana;
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 1px 1px #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 20px;
+.SDIdenContent {
+    border-right: 1px solid #fff;
     text-align: center;
-}
-
-cellTypes {
+    flex: 1 1 auto;c
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    background-color: rgb(42, 47, 48, 0.8);
 }
 
-.bond {
+.SDIdenContent:last-child{
+    border: 0;
+}
+
+.IdenColumns {
+    background-color: #E6E6E6;
     font-family: Verdana;
     font-size: 20px;
+    background-color: rgb(42, 47, 48, 0.8);
     color: #fff;
     text-shadow: 1px 1px #000;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 10px;
-    text-align: center;
-}
-
-.level {
-    font-family: Verdana;
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 1px 1px #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px;
-}
-
-.avatar {
-    font-family: Verdana;
-    color: #fff;
-    text-shadow: 1px 1px #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.avatar img {
-    width: 140px;
-}
-
-.idenContent {
     border-bottom: 3px solid #7F8C95;
     border-left: 3px solid #7F8C95;
     border-right: 3px solid #7F8C95;
-    padding: 15px;
+}
+
+#firstRow {
+    color: #DBC200;
+    font-size: 22px;
+    font-style: bold;
+    margin: 10px;
+}
+
+#secondRow {
+    color: #fff;
+    font-size: 18px;
+    font-style: bold;
+    margin: 10px;
+}
+
+.aboutContent {
+    font-family: Verdana;
+    font-size: 15px;
     background-color: rgb(42, 47, 48, 0.8);
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 3px solid #7F8C95;
+    border-left: 3px solid #7F8C95;
+    border-right: 3px solid #7F8C95;
+    text-align: justify; 
+}
+
+.commandsContent {
+    font-family: Verdana;
+    font-size: 15px;
+    background-color: rgb(42, 47, 48, 0.8);
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 3px solid #7F8C95;
+    border-left: 3px solid #7F8C95;
+    border-right: 3px solid #7F8C95;
+    text-align: justify;  
 }

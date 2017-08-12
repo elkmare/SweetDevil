@@ -16,62 +16,11 @@ const quick = {
 }
 
 export class SDCommands extends Component {
-  constructor(props){
-    super(props)
-    this.state = {hidden: false};
-    this.handleClick=this.handleClick.bind(this);
-  }
-  
-  handleClick () {
-    const newState = this.state.hidden == true ? true : false;
-    this.setState({hidden: newState});
-  }
-  
   render() {
-    if(this.state.hidden == true) {
-    return(
-      <table className="commands">
-        <tr>
-          <th>Command Cards</th>
-        </tr>
-        <tr>
-          <td></td>
-        </tr>
-      </table>
-    )
-  }
-    else {
       return (
-      <table className="commands">
-        <tr>
-          <th>Command Cards</th>
-        </tr>
-        <tr>
-          <td>
-            <img 
-              src={quick.src}
-              art={quick.alt} 
-              onClick={this.hidden} />
-            <img 
-              src={arts.src}
-              alt={arts.alt} 
-              onClick={this.hidden} />
-            <img 
-              src={arts.src}
-              alt={arts.alt} 
-              onClick={this.hidden} />
-            <img 
-              src={buster.src}
-              alt={buster.alt}
-              onClick={this.hidden} />
-            <img 
-              src={buster.src}
-              alt={buster.alt}
-              onClick={this.hidden} />
-          </td>
-        </tr>
-      </table>
+            <div className="cellMargin">
+              <div><img src={this.props.src} /></div>
+            </div>
       )
     }
     }
-  }
