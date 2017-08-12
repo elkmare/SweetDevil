@@ -13,7 +13,6 @@ import {SDSkills} from './SDSkills';
 import {SDHeader} from './SDHeader';
 import {SDNPContent} from "./SDNPContent";
 import {TableHeader} from './Header';
-// import {SDNav} from './SDNav'
 
 class Test extends Component {
   render () {
