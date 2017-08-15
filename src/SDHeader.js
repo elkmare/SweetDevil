@@ -4,8 +4,8 @@ export class SDHeader extends Component {
   render () {
     return (
     <div>
-    <h1>Altera Sweet Devil ★★★★★</h1>
-    <h2>アルテラ•スウィート•デビル</h2>
+    <h1>{this.props.name}</h1>
+    <h2>{this.props.japname}</h2>
     </div>
     )
   }

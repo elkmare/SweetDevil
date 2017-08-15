@@ -6,13 +6,17 @@ import './SDIden.css';
 import './SDCommands.css';
 import './SDAbout.css';
 import {SDPic} from './SDPic';
-import {SDIden} from './SDIden';
 import {SDAbout} from './SDAbout';
 import {SDCommands} from './SDCommands';
-import {SDSkills} from './SDSkills';
 import {SDHeader} from './SDHeader';
 import {SDNPContent} from "./SDNPContent";
 import {TableHeader} from './Header';
+import {SDIdenContent} from './SDIdenContent';
+import {SDIdenContentPic} from './SDIdenContentPic';
+import {SDIdenContentPicTxt} from './SDIdenContentPicTxt';
+import {SDIdenHeader} from './SDIdenHeader';
+import {Skill} from './Skill';
+import {SDSkillsGroup} from './SDSkillsGroup';
 
 class Test extends Component {
   render () {
@@ -20,7 +24,7 @@ class Test extends Component {
 <div className="strona">
 
   <div className="header">
-     <SDHeader />
+     <SDHeader name="Altera Sweet Devil ★★★★★" japname="アルテラ•スウィート•デビル" />
   </div>
 <br />
     <div className="ramka">
@@ -30,7 +34,17 @@ class Test extends Component {
         </div>
 
         <div className="rightColumn">
-            <SDIden />
+            <div className="iden">
+                <SDIdenHeader name="Identity"/>
+                <div className="IdenColumns">
+                    <SDIdenContentPic src='http://i.imgur.com/TYysU4h.jpg' alt='SweetDevilAvatar'/>
+                    <SDIdenContent name="Lv." value="90 / 90" />
+                    <SDIdenContent name="ATK" value="17.236" />
+                    <SDIdenContent name="HP" value="15.511" />
+                    <SDIdenContent name="COST" value="16" />
+                    <SDIdenContentPicTxt name="Bond Lv." value="5 / 5" src='http://i.imgur.com/wT0n2qj.png' alt='SweetDevilBond' />
+                </div>
+            </div>
         <br />
             <SDAbout header="About" name="Her True Name is Altera (アルテラ,), better known in history as Attila the Hun (アッティラ・ザ・フン). She was the overlord who established a great empire in the 5th Century. She was a warrior and king of the Huns, a tribe descending from the Xiongnu (Hunni). Leading an army of cavalry, the conquests of this great hero covered a great part of the map, controlling a vast territory spanning from Western Asia to Russia, Eastern Europe and even Gaul. It can be said that she invited the eventual collapse of the Roman Empire. Throughout her life, Altera was always in the midst of battle. Due to the terrifying acts she commited in war, she was greatly feared in all European nations as the Scourge of God (神の懲罰) and the Whip of God (神の鞭). She is a pure King of Combat (戦闘王)."/>
         <br />
@@ -66,7 +80,21 @@ class Test extends Component {
                 </div>
             </div>
         <br />
-            <SDSkills />
+        <div className="skills">
+            <TableHeader name="Skills"/>
+            <div className="skillsType">
+                <SDSkillsGroup type="Active Skills">
+                    <Skill name="Marksmanship" rank="A+"/>
+                    <Skill name="Presence Detection" rank="D+"/>
+                    <Skill name="Knight Tactics" rank="C+"/>
+                </SDSkillsGroup>
+                <SDSkillsGroup type="Passive Skills">
+                    <Skill name="Presence Concealment" rank="C-"/>
+                    <Skill name="Experience Point Bonus" rank="B-"/>
+                    <Skill name="Cosmo Reactor" rank="A+"/>
+                </SDSkillsGroup>
+            </div>
+        </div>
         </div>
 </div>
     )
