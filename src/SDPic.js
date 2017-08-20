@@ -28,18 +28,14 @@ export class SDPic extends Component {
     if(this.state.reversed == false) {
     return (
       <img 
-      src={sweetDevilPic.src}
-      alt={sweetDevilPic.alt}
-      width={sweetDevilPic.width}
+      src={this.props.pictureUrls.reverse}
       onClick={this.handleOnClick} />
     )
     }
     else {
     return (
       <img 
-      src={sweetDevilPicBack.src}
-      alt={sweetDevilPicBack.alt}
-      width={sweetDevilPicBack.width} 
+      src={this.props.pictureUrls.normal}
       onClick={this.handleOnClick}/>
     )
     }

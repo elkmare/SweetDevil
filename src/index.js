@@ -78,13 +78,9 @@ const SERVANT = {
     ],
   },
 
-  picture: {
-    reverse: {
-      src: 'http://i.imgur.com/qNhI9aL.jpg',
-    },
-    obverse: {
-      src: 'http://i.imgur.com/OWG5dxN.jpg',
-    }
+  pictureUrls: {
+    reverse: 'http://i.imgur.com/qNhI9aL.jpg',
+    normal: 'http://i.imgur.com/OWG5dxN.jpg',
   }
 
 }

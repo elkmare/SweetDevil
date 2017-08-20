@@ -24,7 +24,7 @@ class App extends Component {
     <div className="ramka">
 
         <div className="leftColumn">
-            <SDPic id={this.props.servant.picture} />
+            <SDPic pictureUrls={this.props.servant.pictureUrls} />
         </div>
 
         <div className="rightColumn">
