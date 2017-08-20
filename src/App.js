@@ -7,98 +7,57 @@ import './SDCommands.css';
 import './SDAbout.css';
 import {SDPic} from './SDPic';
 import {SDAbout} from './SDAbout';
-import {SDCommands} from './SDCommands';
 import {SDHeader} from './SDHeader';
-import {SDNPContent} from "./SDNPContent";
-import {TableHeader} from './Header';
-import {SDIdenContent} from './SDIdenContent';
-import {SDIdenContentPic} from './SDIdenContentPic';
-import {SDIdenContentPicTxt} from './SDIdenContentPicTxt';
-import {SDIdenHeader} from './SDIdenHeader';
-import {Skill} from './Skill';
-import {SDSkillsGroup} from './SDSkillsGroup';
+import {Iden} from './Iden';
+import {Command} from './Command';
+import {NoblePhantasm} from './NoblePhantasm';
+import {Skills} from './Skills';
 
-class Test extends Component {
+class App extends Component {
   render () {
     return (
 <div className="strona">
 
   <div className="header">
-     <SDHeader name="Altera Sweet Devil ★★★★★" japname="アルテラ•スウィート•デビル" />
-  </div>
-<br />
+     <SDHeader values={this.props.servant.header} />
+  </div><br />
     <div className="ramka">
 
         <div className="leftColumn">
-            <SDPic />
+            <SDPic id={this.props.servant.picture} />
         </div>
 
         <div className="rightColumn">
-            <div className="iden">
-                <SDIdenHeader name="Identity"/>
-                <div className="IdenColumns">
-                    <SDIdenContentPic src='http://i.imgur.com/TYysU4h.jpg' alt='SweetDevilAvatar'/>
-                    <SDIdenContent name="Lv." value="90 / 90" />
-                    <SDIdenContent name="ATK" value="17.236" />
-                    <SDIdenContent name="HP" value="15.511" />
-                    <SDIdenContent name="COST" value="16" />
-                    <SDIdenContentPicTxt name="Bond Lv." value="5 / 5" src='http://i.imgur.com/wT0n2qj.png' alt='SweetDevilBond' />
-                </div>
-            </div>
-        <br />
-            <SDAbout header="About" name="Her True Name is Altera (アルテラ,), better known in history as Attila the Hun (アッティラ・ザ・フン). She was the overlord who established a great empire in the 5th Century. She was a warrior and king of the Huns, a tribe descending from the Xiongnu (Hunni). Leading an army of cavalry, the conquests of this great hero covered a great part of the map, controlling a vast territory spanning from Western Asia to Russia, Eastern Europe and even Gaul. It can be said that she invited the eventual collapse of the Roman Empire. Throughout her life, Altera was always in the midst of battle. Due to the terrifying acts she commited in war, she was greatly feared in all European nations as the Scourge of God (神の懲罰) and the Whip of God (神の鞭). She is a pure King of Combat (戦闘王)."/>
-        <br />
-            <div className="commands">
-                <TableHeader name="Command Cards" />
-                <div className="commandsContent">
-                    <SDCommands type="buster" />
-                    <SDCommands type="buster" />
-                    <SDCommands type="arts" />
-                    <SDCommands type="arts" />
-                    <SDCommands type="quick" />
-                </div>
-            </div>
-            
+            <Iden 
+                pic1={this.props.servant.iden.pic1} 
+                values={this.props.servant.iden.values} 
+                pic2={this.props.servant.iden.pic2} /><br />
+
+            <SDAbout 
+                header={this.props.servant.about.header} 
+                name={this.props.servant.about.name} /><br />
+
+            <Command 
+                name={this.props.servant.commands.name}
+                types={this.props.servant.commands.types} />
         </div>
 
     </div>
 
-        <div className="footer">
+    <div className="footer">
+        <NoblePhantasm 
+            name={this.props.servant.noblePhantasm.name} 
+            type={this.props.servant.noblePhantasm.type} 
+            values={this.props.servant.noblePhantasm.values} /><br />
+        <Skills 
+            name={this.props.servant.skills.name}
+            types={this.props.servant.skills.types}
+        />
+    </div>
 
-            <div className="nobleph">
-                <TableHeader name="Noble Phantasm" />
-                <div className="nobleContainer">
-                    <SDCommands type="buster" />
-                    <SDNPContent name="No Second Strike" value="(二度目のストライクはない)"/>
-                    <SDNPContent name="Target" value="All Enemies" />
-                    <SDNPContent name="Rank" value="C-" />
-                    <SDNPContent name="lvl. 1" value="300%" />
-                    <SDNPContent name="lvl. 2" value="400%" />
-                    <SDNPContent name="lvl. 3" value="450%" />
-                    <SDNPContent name="lvl. 4" value="500%" />
-                    <SDNPContent name="lvl. 5" value="550%" />
-                </div>
-            </div>
-        <br />
-        <div className="skills">
-            <TableHeader name="Skills"/>
-            <div className="skillsType">
-                <SDSkillsGroup type="Active Skills">
-                    <Skill name="Marksmanship" rank="A+"/>
-                    <Skill name="Presence Detection" rank="D+"/>
-                    <Skill name="Knight Tactics" rank="C+"/>
-                </SDSkillsGroup>
-                <SDSkillsGroup type="Passive Skills">
-                    <Skill name="Presence Concealment" rank="C-"/>
-                    <Skill name="Experience Point Bonus" rank="B-"/>
-                    <Skill name="Cosmo Reactor" rank="A+"/>
-                </SDSkillsGroup>
-            </div>
-        </div>
-        </div>
 </div>
     )
   }
 }
 
-export default Test;
+export default App;

@@ -5,7 +5,7 @@ export class SDIdenContentPic extends Component {
     return (
       <div className="SDIdenContentPic">
         <div>
-          <img src={this.props.src} />
+          <img src={this.props.value.src} />
           </div>
       </div>
           )
