@@ -127,3 +127,14 @@ a:visited {
 #thirdRow {
     margin: 10px;
 }
+
+.select {
+    margin: 10px;
+}
+
+.choose {
+    color: #fff;
+    font-family: Verdana;
+    text-shadow: 3px 3px #000;
+    margin: 10px;
+}
