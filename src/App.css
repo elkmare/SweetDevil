@@ -44,7 +44,7 @@
 
 body {
     background: #fff;
-    background-image: url('http://i.imgur.com/eAqeAtI.png');
+    background-image: url('http://i.imgur.com/YGWtE3L.png');
 }
 
 #about {
@@ -53,10 +53,9 @@ body {
 
 h1 {
     font-family: Candara;
-    color: #fff;
-    text-align: right;
+    color: #000;
+    text-align: left;
     padding: 0px 20px 0px 0px;
-    text-shadow: 3px 3px #000;
 }
 
 h2 {
@@ -128,13 +127,74 @@ a:visited {
     margin: 10px;
 }
 
-.select {
-    margin: 10px;
+.menuContent {
+    display: flex;
+    flex-direction: row;
 }
 
-.choose {
-    color: #fff;
-    font-family: Verdana;
-    text-shadow: 3px 3px #000;
-    margin: 10px;
+.logo {
+    flex: 1 1 auto;
 }
+
+.navigation {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    padding: 5px 10px 5px 5px;
+    margin: 2px;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+    float: left;
+    display: block;
+    padding: 5px 10px 5px 5px;
+    margin: 2px;
+    text-transform: uppercase;
+    background-color: #256E8E;
+}
+
+.navigation a:active {
+    float: left;
+    display: block;
+    padding: 0px 20px 0px 0px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.select {
+    text-align: right;
+    flex: 1 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.icon {
+    border: 1px solid #000;
+    padding: 5px;
+    flex: 1 1 auto;
+}
+
+.servantName {
+    flex: 1 1 auto;
+    border: 1px solid #000;
+}
+
+.servantClass {
+    flex: 1 1 auto;
+    border: 1px solid #000;
+}
+
+
+
