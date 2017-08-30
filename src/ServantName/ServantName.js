@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SDHeader extends Component {
+export class ServantName extends Component {
   render () {
     return (
       <div>

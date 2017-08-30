@@ -16,7 +16,7 @@ const URLS = {
 
 }
 
-export class Skill extends Component {
+export class SkillsInventory extends Component {
   render() {
     const url = URLS[this.props.name];
     return (

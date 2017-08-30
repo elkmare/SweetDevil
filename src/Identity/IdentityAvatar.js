@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SDIdenContentPic extends Component {
+export class IdentityAvatar extends Component {
   render () {
     return (
       <div className="SDIdenContentPic">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SDIdenContent extends Component {
+export class IdentityStats extends Component {
   render () {
     return (
       <div className="SDIdenContent">

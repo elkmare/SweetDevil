@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SDAbout extends Component {
+export class About extends Component {
   render() {
     return(
       <div className="about">

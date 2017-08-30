@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SDIdenContentPicTxt extends Component {
+export class IdentityBond extends Component {
   render () {
     return (
       <div className="SDIdenContent">

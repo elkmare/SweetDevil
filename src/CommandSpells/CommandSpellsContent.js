@@ -15,7 +15,7 @@ const quick = {
   alt: 'Quick',
 }
 
-export class SDCommands extends Component {
+export class CommandSpellsContent extends Component {
 
   render() {
     let url;

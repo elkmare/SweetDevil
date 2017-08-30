@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {TableHeader} from './Header';
+import {TableHeader} from '../Header';
 
-export class SDNPContent extends Component {
+export class NoblePhantasmContent extends Component {
   render() {
     return(
           <div className="nobleDivision">

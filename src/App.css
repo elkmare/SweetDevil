@@ -130,6 +130,7 @@ a:visited {
 .menuContent {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .logo {
@@ -171,7 +172,7 @@ ul {
 
 .select {
     text-align: right;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .list {
@@ -180,21 +181,34 @@ ul {
     padding: 20px;
 }
 
-.icon {
-    border: 1px solid #000;
-    padding: 5px;
-    flex: 1 1 auto;
+.divTable{
+	display: table;
+	width: 100%;
 }
-
-.servantName {
-    flex: 1 1 auto;
-    border: 1px solid #000;
+.divTableRow {
+	display: table-row;
 }
-
-.servantClass {
-    flex: 1 1 auto;
-    border: 1px solid #000;
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
 }
-
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
 
 
