@@ -29,6 +29,7 @@ export class PageContent extends Component {
         <Switch>
             <Route exact path='/' component={Strona}/>
             <Route path='/servants/:servant' component={GetServant} />
+            <Route exact path='/servants' component={ListOfServants}/>
         </Switch>
     )
   }
